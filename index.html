@@ -3,7 +3,8 @@
   <title>Scavenger Hunt</title>
 
   <script>
-    function checkAnswer() {
+    function checkAnswer(e) {
+      e.preventDefault()
       let x = document.getElementById('1plus1').value;
       if (x === "2"){
         document.getElementById('Q2').style.visibility = "visible"
